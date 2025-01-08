@@ -4,90 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Antara Gandhi | Software Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
-    <header>
+    <header class="hero">
         <div class="container">
             <h1>Antara Gandhi</h1>
-            <p>Software Engineer</p>
+            <p>Software Engineer | Creative Thinker | Problem Solver</p>
+            <a href="#projects" class="cta-button">Explore My Work</a>
         </div>
     </header>
 
     <nav>
         <ul>
             <li><a href="#about">About</a></li>
-            <li><a href="#current-work">Current Work</a></li>
-            <li><a href="#past-work">Past Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#interests">Interests</a></li>
-            <li><a href="#quotes">Quotes</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <section id="about" class="section">
         <h2>About Me</h2>
         <p>
-            I’m Antara Gandhi, a passionate software engineer ...
+            Hi! I’m Antara Gandhi, a passionate software engineer with 6-9 months of professional experience creating robust, scalable, and user-friendly solutions. My journey in tech began with curiosity and has evolved into a deep commitment to crafting elegant code and delightful user experiences.
         </p>
         <p>
-            My journey led me to ...
+            Currently, I’m building innovative solutions at <strong>Balyasny Asset Management</strong>, where I specialize in ...
         </p>
-        <p>If any of this resonates with you, feel free to <a href="#contact" class="contact-link">reach out!</a></p>
+        <p>
+            When I’m not coding, I’m lifting weights, exploring nature, or indulging in a good fantasy novel.
+        </p>
     </section>
 
-    <section id="current-work" class="section">
-        <h2>Current Work</h2>
-        <div class="work-info">
-            <p><strong>Software Engineer at Balyasny Asset Management</strong></p>
-            <p>...</p>
-            <p><strong>///</strong></p>
-            <p>...</p>
+    <section id="skills" class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-container">
+            <div class="skill">
+                <h3>Frontend</h3>
+                <p>React, HTML, CSS, JavaScript, TypeScript</p>
+            </div>
+            <div class="skill">
+                <h3>Backend</h3>
+                <p>Node.js, Python, Flask</p>
+            </div>
+            <div class="skill">
+                <h3>Tools & Platforms</h3>
+                <p>Git, Docker, AWS, SQL, CI/CD</p>
+            </div>
         </div>
     </section>
 
-    <section id="past-work" class="section">
-        <h2>Past Work</h2>
-        <div class="work-info">
-            <ul>
-                <li>Software Engineering Intern at Balyasny Asset Management</li>
-                <li>Software Engineering Intern at Twilio</li>
-                <li>Front End Developer and Fellow at Learning Equality</li>
-                <li>Software Engineering Intern at ITC Holdings</li>
-            </ul>
-            <p>...</p>
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Gamified Study Tracker</h3>
+            <p>A fun and interactive app to gamify studying and promote consistent learning streaks.</p>
+            <a href="https://github.com/antaragandhi/gamified-tracker" target="_blank" class="project-link">View on GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>A modern and responsive personal portfolio to showcase my work and technical skills.</p>
+            <a href="https://github.com/antaragandhi/portfolio" target="_blank" class="project-link">View on GitHub</a>
         </div>
     </section>
 
     <section id="interests" class="section">
-        <h2>My Interests</h2>
-        <p>
-            ...
-        </p>
-        <p>Outside of work, I enjoy:</p>
+        <h2>Interests</h2>
         <ul>
-            <li>Reading science fiction or slightly absurd fantasy</li>
-            <li>Writing poems or book(s)</li>
-            <li>Lifting, running, hiking -- I love being outside!</li>
+            <li>Exploring new technologies and frameworks</li>
+            <li>Reading science fiction and fantasy novels</li>
+            <li>Outdoor adventures like hiking and running</li>
         </ul>
     </section>
 
-    <section id="quotes" class="section">
-        <h2>Quotes I Enjoy</h2>
-        <div class="quote">
-            <p>"..." - abcd</p>
-        </div>
-        <div class="quote">
-            <p>"..." - abcd</p>
-        </div>
-        <div class="quote">
-            <p>".." - abcd</p>
-        </div>
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/{your_form_id}" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" class="submit-button">Send Message</button>
+        </form>
     </section>
 
     <footer>
-        <p>Copyright © 2025 Antara Gandhi | All rights reserved.</p>
+        <p>Copyright &copy; 2025 Antara Gandhi | Built with love and code</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
