@@ -3,37 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Personal Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            padding: 20px;
-        }
-    </style>
+    <title>Your Name | Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Welcome to my personal website</p>
+        <div class="container">
+            <h1>Welcome to My Website!</h1>
+            <p>I'm a recent graduate with a background in Computer Science and Business</p>
+        </div>
     </header>
-    <section>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>This is a short description of who you are.</p>
+        <p>
+            Hi, I’m [Your Name]. I have a Bachelor's degree in Computer Science and a BBA from the University of Michigan.
+            I’m passionate about coding, solving problems, and building useful software.
+        </p>
+        <p>
+            I’ve had internships at [Company Names] and am currently working as a [Job Title] at [Company].
+            I love learning new technologies, and I’m always looking for opportunities to grow and contribute.
+        </p>
     </section>
-    <section>
+
+    <section id="experience" class="section">
+        <h2>Experience</h2>
+        <div class="experience">
+            <div class="job">
+                <h3>Software Engineer Intern</h3>
+                <p><strong>Company Name</strong> | May 2023 - August 2023</p>
+                <ul>
+                    <li>Developed and maintained features for web applications using React and Node.js.</li>
+                    <li>Worked with cross-functional teams to implement APIs and microservices.</li>
+                    <li>Enhanced system performance by optimizing backend queries and code base.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3>Software Engineering Intern</h3>
+                <p><strong>Another Company</strong> | May 2022 - August 2022</p>
+                <ul>
+                    <li>Collaborated on building a full-stack application using Django and PostgreSQL.</li>
+                    <li>Contributed to automation tools that reduced manual processing time by 30%.</li>
+                    <li>Wrote unit tests to improve code reliability and maintainability.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Project Title 1</h3>
+                <p>A short description of a project you've worked on. E.g., a web app or tool that you built with specific technologies.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p>A short description of another project. E.g., a mobile app, open-source contribution, etc.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <div class="skills">
+            <ul>
+                <li>Programming: JavaScript, Python, Java, C++</li>
+                <li>Web Development: React, Node.js, HTML, CSS</li>
+                <li>Database: PostgreSQL, MongoDB</li>
+                <li>Tools: Git, Docker, VS Code</li>
+                <li>Other: Agile, Problem-Solving, Team Collaboration</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
         <h2>Contact</h2>
-        <p>Email: yourname@example.com</p>
+        <p>If you'd like to connect, feel free to reach out via email or fill out the contact form below.</p>
+        <form id="contact-form">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
     </section>
+
+    <section id="interests" class="section">
+        <h2>Interests</h2>
+        <p>When I’m not coding, I enjoy playing video games, hiking, and exploring new technologies. I also have an interest in AI and its potential to transform industries.</p>
+    </section>
+
+    <footer>
+        <p>Copyright © 2025 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
