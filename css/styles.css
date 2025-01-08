@@ -1,5 +1,5 @@
 /* General Reset */
-* {
+body, h1, h2, h3, p, ul, li, a, input, textarea, button {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,199 +7,175 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    background: #fffafc;
     color: #333;
-    background: linear-gradient(135deg, #ff99cc, #ff66ff);
-    margin: 0;
-    overflow-x: hidden;
-} 
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #ffc1e3, #ffe6f4);
+    color: #6b3054;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.75rem 2rem;
+    background: #ff85b3;
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background: #ff6fa0;
+}
 
 /* Navigation */
 nav {
-    background: #ff66ff;
-    color: #fff;
+    background: #ffd1e8;
     padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
+    gap: 2rem;
 }
 
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #fff;
+nav a {
+    color: #6b3054;
     text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: bold;
-    transition: color 0.3s;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover,
-nav ul li a.active {
-    color: #ffccff;
-    text-shadow: 0px 2px 6px rgba(255, 255, 255, 0.8);
+nav a:hover {
+    color: #ff6fa0;
 }
 
-/* Hero Section */
-.hero {
-    background: linear-gradient(to bottom, rgba(255, 102, 255, 0.8), rgba(255, 153, 204, 0.8)), url('assets/images/hero-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-    padding: 120px 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    animation: slide-in 1s ease-in-out forwards;
-    opacity: 0;
-}
-
-.hero p {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-    animation: fade-in 1.5s ease-in-out forwards;
-    opacity: 0;
-}
-
-.cta-button {
-    display: inline-block;
-    background: #ff33cc;
-    color: #fff;
-    padding: 0.75rem 1.5rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    border: none;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background 0.3s, transform 0.2s;
-    animation: bounce 2s infinite;
-}
-
-.cta-button:hover {
-    background: #ff99cc;
-    transform: scale(1.1);
-}
-
-/* Animations */
-@keyframes slide-in {
-    from {
-        transform: translateY(-50px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fade-in {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes bounce {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-}
-
-/* Section Styles */
+/* Section Styling */
 .section {
-    padding: 60px 20px;
+    padding: 4rem 2rem;
     text-align: center;
-    background: #fff;
-    border-radius: 15px;
-    margin: 30px 20px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-}
-
-.section:hover {
-    transform: scale(1.02);
 }
 
 .section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    color: #6b3054;
     margin-bottom: 1rem;
-    color: #ff66ff;
-    text-shadow: 0px 2px 6px rgba(255, 102, 255, 0.6);
 }
 
-.section p {
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    font-size: 1.2rem;
+.section p, .section ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.skill {
+    background: #ffe6f4;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skill h3 {
+    font-size: 1.25rem;
+    color: #6b3054;
+    margin-bottom: 0.5rem;
+}
+
+.project {
+    background: #ffedf3;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #6b3054;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #ff85b3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-link:hover {
+    color: #ff6fa0;
 }
 
 /* Contact Form */
 form {
     max-width: 500px;
     margin: 0 auto;
-    background: #ffccff;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-form input,
-form textarea {
+form input, form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 1rem;
-    border: 2px solid #ff99cc;
-    border-radius: 10px;
-    background: #fff;
-    transition: border-color 0.3s;
-}
-
-form input:focus,
-form textarea:focus {
-    border-color: #ff66ff;
+    padding: 0.75rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ffcedf;
+    border-radius: 5px;
 }
 
 form button {
     width: 100%;
-    background: #ff33cc;
+    padding: 0.75rem;
+    background: #ff85b3;
     color: #fff;
-    padding: 10px;
+    font-weight: 600;
     border: none;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: background 0.3s;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background: #ff99cc;
+    background: #ff6fa0;
 }
 
 /* Footer */
 footer {
+    background: #ffd1e8;
     text-align: center;
-    padding: 20px;
-    background: #ff66ff;
-    color: #fff;
-    margin-top: 20px;
-    font-weight: bold;
+    padding: 1.5rem 0;
+    font-size: 0.9rem;
+    color: #6b3054;
+}
+
+footer a {
+    color: #ff6fa0;
+    text-decoration: none;
 }
