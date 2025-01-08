@@ -19,6 +19,20 @@ document.querySelectorAll('nav ul li a').forEach(link => {
     });
 });
 
+// Floating hearts animation in the hero section
+const hero = document.querySelector('.hero');
+
+setInterval(() => {
+    const heart = document.createElement('div');
+    heart.classList.add('floating-heart');
+    heart.style.left = Math.random() * 100 + '%';
+    hero.appendChild(heart);
+
+    setTimeout(() => {
+        heart.remove();
+    }, 3000);
+}, 500);
+
 // Highlight active section in navigation on scroll
 window.addEventListener('scroll', () => {
     const sections = document.querySelectorAll('.section');
