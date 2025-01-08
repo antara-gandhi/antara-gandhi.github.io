@@ -8,7 +8,7 @@ document.querySelectorAll('nav ul li a').forEach(link => {
 
         if (targetElement) {
             window.scrollTo({
-                top: targetElement.offsetTop - 60,
+                top: targetElement.offsetTop - 80,
                 behavior: 'smooth'
             });
         }
@@ -26,7 +26,7 @@ window.addEventListener('scroll', () => {
 
     let currentSection = '';
     sections.forEach(section => {
-        const sectionTop = section.offsetTop - 70;
+        const sectionTop = section.offsetTop - 100;
         if (window.scrollY >= sectionTop) {
             currentSection = section.getAttribute('id');
         }
@@ -46,10 +46,11 @@ const hero = document.querySelector('.hero');
 setInterval(() => {
     const heart = document.createElement('div');
     heart.classList.add('floating-heart');
+    heart.textContent = '❤️';
     heart.style.left = Math.random() * 100 + '%';
     hero.appendChild(heart);
 
     setTimeout(() => {
         heart.remove();
-    }, 3000);
-}, 500);
+    }, 4000);
+}, 800);
